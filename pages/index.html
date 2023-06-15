@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ .Title }}</title>
+  <link href="/static/css/style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Oxygen&display=swap" rel="stylesheet">
+</head>
+<body class="background">
+  <div class="header">
+    <header class="header__nav">
+      <span class="escape">Escape.</span>
+      <nav class="header__nav__items">
+        <a class="navigation" href="">HOME</a>
+        <a class="navigation" href="">CATEGORIES</a>
+        <a class="navigation" href="">ABOUT</a>
+        <a class="navigation" href="">CONTACT</a>
+      </nav>
+    </header>
+    <div class="header__title">
+      <h1 class="header__title__h1">Lets do it together</h1>
+      <span class="header__title__h2">We travel the world in search of stories. Come along for the ride.</span>
+      <button class="header__button">
+        <span class="header__button__text">View Latest Posts</span>
+      </button>
+    </div>
+  </div>
+  <div class="nav">
+    <nav  class="nav__items">
+      <a class="nav__item__text" href="">Nature</a>
+      <a class="nav__item__text" href="">Photography</a>
+      <a class="nav__item__text" href="">Relaxation</a>
+      <a class="nav__item__text" href="">Vacation</a>
+      <a class="nav__item__text" href="">Travel</a>
+      <a class="nav__item__text" href="">Adventure</a>
+    </nav>
+  </div>
+  <section>
+    <h2 class="section__header">Featured Posts</h2>
+    <div class="featured-posts-layout">
+      {{ range .FeaturedPosts }}
+      <a href="/post/{{ .PostID }}">
+        <article class="article-fp {{ .ImgUrl }}">
+          <div class="article-fp__title">
+            <div class="article__title__h">   
+              <h3 class="article__title__h__h1 article_title_fp">{{ .Title }}</h3>
+                <span class="article__title__h__h2 article_subtitle_fp">{{ .Subtitle }}</span>
+            </div>
+            <div class="article__title__footer">
+              <div class="article__title__footer__author">
+                <span class="{{ .AuthorImg }}"></span>
+                <span class="article__title__footer__author__text ">{{ .Author }}</span>
+              </div>
+              <span class="article__title__footer__date">{{ .PublishDate }}</span>
+            </div>
+          </div>
+        </article>
+      </a>
+      {{ end }}
+    </div>
+  </section>
+  <section>
+    <h2 class="section__header">Most Recent</h2>
+    <div class="most-recent">
+      <div class="most-recent-layout">
+        {{ range .MostRecent }}
+        <a href="/post/{{ .PostID }}">
+          <article class="article-mr">
+            <span style="background: url('C:/Users/suhan/LW/static/images/lake.png')"></span>
+            <div class="article-mr__title">  
+              <div>
+                <h3 class="article__title__h__h1 article_title_mr">{{ .Title }}</h3>
+                <p class="article__title__h__h2 article_subtitle_mr">{{ .Subtitle }}</p>
+              </div>
+              <div class="article__title__footer">
+                <div class="article__title__footer__author">
+                  <img src="{{ .AuthorImg }}">
+                  <span class="article__title__footer__author__text article_author_mr">{{ .Author }}</span>
+                </div>
+                <span class="article__title__footer__date article_date_mr">{{ .PublishDate }}</span>
+              </div>
+            </div>
+          </article>
+        </a>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer__text">Stay in Touch</div>
+    <div class="footer__div">
+      <form class="footer__div__form">
+        <input class="footer__div__form__input">
+        <button class="footer__div__button">Submit</button>
+      </form>
+    </div>
+    <div class="footer__navigation">
+      <span class="escape">Escape.</span>
+      <nav>
+          <a class="navigation navigation_footer" href="">HOME</a>
+          <a class="navigation navigation_footer" href="">CATEGORIES</a>
+          <a class="navigation navigation_footer" href="">ABOUT</a>
+          <a class="navigation navigation_footer" href="">CONTACT</a>
+        </nav>
+    </div>
+  </footer>
+</body>
+</html>

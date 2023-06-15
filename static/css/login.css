@@ -1,0 +1,207 @@
+*
+{
+    margin: 0px;
+    padding: 0;
+}
+.page
+{
+    background: linear-gradient(0deg, rgba(66, 70, 73, 0.4), rgba(66, 70, 73, 0.4)), url('../images/login_background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: inherit;
+}
+.page__content
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0 130px;
+}
+.main__logo
+{
+    margin-top: -48px;
+    margin-left: 100px;
+}
+.logo__title
+{
+    display: flex;
+    align-items: baseline;
+}
+.title__text_1
+{
+    color:#FFFFFF;
+    font-size: 45.5px;
+    font-family: 'Lora';
+}
+.title__text_2
+{
+  color:#FFFFFF;
+  font-size: 24.5px;
+  font-family: 'Oxygen';  
+}
+.main__subtitle
+{
+    margin-top: 16px;
+    color:#FFFFFF;
+    font-size: 17px;
+    font-family: 'Oxygen'; 
+}
+.form
+{
+    width: 480px;
+    height: 560px;
+    background-color:#FFFFFF;
+    border-radius: 3px;
+}
+.form__title
+{
+    color: var(--text-primary);
+    font: 34px/40px "Lora";
+    margin-top: 56px;
+    margin-left: 40px;
+}
+.form__content
+{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+}
+.form__warning
+{
+    width: 400px;
+    height: 44px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+}
+.form__warning--critical
+{
+    background: var(--background-critical);
+    border-left: 2px solid var(--status-critical);
+}
+.form__warning--success
+{
+    background: var(--background-success);
+    border-left: 2px solid var(--status-success);
+}
+.form__warning--hidden
+{
+    display: none;
+}
+.form__warning-icon
+{
+    margin-left: 12px;
+    width: 24px;
+    height: 24px;
+    background: url("../static/icons/alert-circle.svg");
+}
+.form__warning-text
+{
+    margin-left: 10px;
+    color: var(--text-primary);
+    font: 14px/20px "Oxygen";
+}
+.form-field
+{
+    position: relative;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.form-field__label
+{
+    color: var(--text-secondary);
+    font: 12px/16px "Oxygen";
+}
+.form-field__email
+{
+    width: 400px;
+    height: 40px;
+    font-family: 'Oxygen';
+    font-size: 16px;
+    line-height: 24px;
+    color: #2E2E2E;
+    background: #FFFFFF;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid #EAEAEA;
+}
+.form-field__password
+{
+    width: 400px;
+    height: 40px;
+    font-family: 'Oxygen';
+    font-size: 16px;
+    line-height: 24px;
+    color: #2E2E2E;
+    background: #FFFFFF;
+    border-radius: 0;
+    border-width: 0;
+    border-bottom: 1px solid #EAEAEA;
+}
+.form-field__password:invalid
+{
+    outline: none;
+    border: 0;
+    background: #FFFFFF;
+    border-bottom: 1px solid #EAEAEA;
+}
+.form-field__password:focus:valid
+{
+    outline: none;
+    border: 0;
+    background: #F7F7F7;
+    border-bottom: 1px solid #2E2E2E;
+    border-radius: 5px 5px 0 0;
+}
+.form-field__password:valid
+{
+    outline: none;
+    border: 0;
+    background: #F7F7F7;
+    border-bottom: 1px solid #2E2E2E;
+    border-radius: 5px 5px 0 0;
+}
+.form-field__show-password
+{
+    position: absolute; 
+    top: 25px;
+    right: 50px;
+    cursor: pointer;
+    display: flex;
+}
+.form-field__show-password-replace
+{
+    display: none;
+}
+.form-field__hide-password
+{
+    position: absolute; 
+    top: 25px;
+    right: 50px;
+    cursor: pointer;
+    display: none;
+}
+.form-field__hide-password-replace
+{
+    display: flex;
+}
+.form__button
+{
+    width: 93px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    font: 16px/24px "Oxygen";
+    color:#FFFFFF;
+    border-style: none;
+    border-radius: 3px;
+    background-color: #DD783F;
+}

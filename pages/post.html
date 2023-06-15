@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ .Title }}</title>
+  <link href="/static/css/style1.css" rel="stylesheet">
+</head>
+<body class="body__background">
+  <header class="header__nav">
+    <span class="escape">Escape.</span>
+    <nav>
+      <a class="navigation" href="">HOME</a>
+      <a class="navigation" href="">CATEGORIES</a>
+      <a class="navigation" href="">ABOUT</a>
+      <a class="navigation" href="">CONTACT</a>
+    </nav>
+  </header>
+  <div class="article">
+    <h1 class="article__title">{{ .Title }}</h1>
+    <span class="article__subtitle">{{ .SubTitle }}</span>
+    <span>{{ .ImgUrl }}</span>
+  </div>
+  <section class="text-section">
+    <div class="text-section__text">
+      <p class="text">{{ .Content }}</p>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer__text">Stay in Touch</div>
+    <div class="footer__div">
+      <form class="footer__div__form">
+        <input class="footer__div__form__input">
+        <button class="footer__div__button">Submit</button>
+      </form>
+    </div>
+    <div class="footer__navigation">
+      <span class="escape escape-footer">Escape.</span>
+      <nav>
+          <a class="navigation navigation_footer" href="">HOME</a>
+          <a class="navigation navigation_footer" href="">CATEGORIES</a>
+          <a class="navigation navigation_footer" href="">ABOUT</a>
+          <a class="navigation navigation_footer" href="">CONTACT</a>
+        </nav>
+    </div>
+  </footer>
+</body>
+</html>

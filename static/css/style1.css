@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.body__background
+{
+  background: #F7F7F7; 
+}
+.header__nav
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  align-items: baseline;
+  margin-top: 20px;
+}
+.article
+{
+  margin: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navigation
+{
+  font-family: 'Oxygen', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.6px;
+  color: #2E2E2E;
+  margin: 20px;
+  text-decoration: none;
+}
+.escape
+{
+  font-family: 'Lora', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 26px;
+  color: #2E2E2E;
+  margin: 20px;
+}
+.article__title
+{
+  font-family: 'Lora', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 51px;
+  color: #2E2E2E;
+}
+.article__subtitle
+{
+  font-family: 'Oxygen', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: rgba(46, 46, 46, 0.63);
+  margin-bottom: 113px;
+  margin-top: 20px;
+}
+.text-section
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text-section__text
+{
+  width: 960px;
+  height: 1431px;
+  font-family: 'Oxygen', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  color: #101315;
+}
+.escape-footer
+{
+  color: #FFFFFF;
+}
+.footer
+{
+  background-image: url(/static/images/new-footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 378px;
+  margin-top: 108px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+.footer__text
+{
+  font-family: 'Oxygen', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 81px;
+}
+.footer__navigation
+{
+  background: rgba(35, 47, 56, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  align-items: baseline;
+  margin-top: 90px;
+}
+.footer__div
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.footer__div__form
+{
+  height: 50px;
+  margin-top: 38px;
+  display: flex;
+}
+.footer__div__button
+{
+  height: 50px;
+  width: 125px;
+  background: rgba(255, 255, 255, 0.28);
+  border-radius: 0px 3px 3px 0px;
+  border: 0px;
+  color: #F8F8F8;
+}
+.footer__div__form__input
+{
+  width: 375px;
+  height: 50px;
+}
+.navigation_footer
+{
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
